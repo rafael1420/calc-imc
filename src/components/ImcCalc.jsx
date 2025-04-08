@@ -1,3 +1,4 @@
+import Button from './Button';
 import './ImcCalc.css';
 
 const ImcCalc = () => {
@@ -8,7 +9,7 @@ const ImcCalc = () => {
             <div className="form-inputs">
                 <div className="form-control">
                     <label htmlFor="height">Altura:</label>
-                    <input type="text" name='height' id='height' placeholder='Exemplo 1,75'/>
+                    <input type="text" name='height' id='height' placeholder='Exemplo 1,83'/>
                 </div>
             </div>
 
@@ -21,7 +22,10 @@ const ImcCalc = () => {
                 </div>
             </div>
         </form>
-        <div className="action-control"><button>Calcular</button><button>Limpar</button></div>
+        <div className="action-control">
+            <Button id="calc-btn" text="Calcular"/>
+            <Button id="clear-btn" text="Limpar"/>
+            </div>
 
     </div>
   )
