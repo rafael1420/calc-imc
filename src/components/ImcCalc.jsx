@@ -1,7 +1,10 @@
+import { useState } from 'react';
 import Button from './Button';
 import './ImcCalc.css';
 
 const ImcCalc = () => {
+    const [height, setHeight] = useState("");
+    const [weight, setWeight] = useState("");
   return (
     <div id='calc-container'>
         <h2>Calculadora de IMC</h2>
