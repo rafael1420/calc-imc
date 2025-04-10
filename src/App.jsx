@@ -6,8 +6,22 @@ import imcTable from './components/imcTable';
 
 function App() {
   const calcImc = (e, height, weight) => {
-    console.log("Executou");
-  }
+    e.preventDefault();
+
+    if (!weight || !height) return;
+
+    const weightFloat = +weight.replace(",", ".");
+    const heightFloat = +height.replace(",", ".");
+
+    const imcResult = (weightFloat /(heightFloat * heightFloat)).toFixed(1);
+
+
+
+    setImc(imcResult);
+
+  };
+
+
   const [imc, setImc] = useState("");
   const [info, setInfo] = useState('');
   const [infoClass, setinfoClass] = useState("");
