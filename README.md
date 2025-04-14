@@ -1,5 +1,7 @@
 🧮 Calculadora de IMC
 🇧🇷 Português
+
+
 Este é um projeto simples de Calculadora de IMC (Índice de Massa Corporal) desenvolvido com JavaScript, HTML, CSS e React.
 
 O usuário informa seu peso e altura, e o app calcula o IMC e exibe a classificação de acordo com os dados da Organização Mundial da Saúde.
